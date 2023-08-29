@@ -11,7 +11,7 @@ In general, the following steps will be performed to generate such a grid:
    ![Set of hexagonally aligned vertices in a set of layers](/example/010_vertices.png "Set of hexagonally aligned vertices in a set of layers")  
 2. Build triangles with the previously created vertices. Each vertice is connected to its closest vertices forming a set of equilateral triangles in this process.    
    ![Triangles connecting the previously created vertices](/example/010_triangles.png "Triangles connecting the previously created vertices")  
-3. Compute the neighboring triangles for each triangle.
+3. Compute the neighboring/adjacent triangles for each triangle. Adjacency is defined as triangles sharing two vertices with each other.  
 4. Combine two adjacent triangles into a parallelogram. Each triangle may only be part of one parallelogram. This may create an irregular structure - based on the algorithm. The aim is to keep some triangles which can't be merged with an adjacent triangle into a parallelogram. This can be achieved by picking the next triangle to be merged and the triangle to be merged with with a certain randomness. With the randomness of the algorithm, the structure may look different in each generation. For this implementation, the same output is created for each generation (based on a set of parameters).     
    ![Parallelograms merging two triangles](/example/010_parallelogram.png "Parallelograms merging two triangles") 
 5. With the implementation of the algorithm, some of the triangles may not find an adjacent triangle which is not merged into a parallelogram. These are highlighted on the following figure.     
