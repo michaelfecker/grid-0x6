@@ -14,7 +14,7 @@ In general, the following steps will be performed to generate such a grid:
 3. Compute the neighboring triangles for each triangle.
 4. Combine two adjacent triangles into a parallelogram. Each triangle may only be part of one parallelogram. This may create an irregular structure - based on the algorithm. The aim is to keep some triangles which can't be merged with an adjacent triangle into a parallelogram. This can be achieved by picking the next triangle to be merged and the triangle to be merged with with a certain randomness. With the randomness of the algorithm, the structure may look different in each generation. For this implementation, the same output is created for each generation (based on a set of parameters).     
    ![Parallelograms merging two triangles](/example/010_parallelogram.png "Parallelograms merging two triangles") 
-5. With the implementation of the algorithm, some of the triangles may not find an adjacent triangle which is not merged into a parallelogram. 
+5. With the implementation of the algorithm, some of the triangles may not find an adjacent triangle which is not merged into a parallelogram. These are highlighted on the following figure.     
     ![Unmerged triangles highlighted in orange color](/example/010_unmerged.png "Unmerged triangles highlighted in orange color") 
 6. Each paralellogram is split into four quadrangles. These quadrangles are also parallelograms on their own.  
     ![Split parallelograms into 4 same-sized shapes](/example/010_patch-1.png "Split parallelograms into 4 same-sized shapes") 
