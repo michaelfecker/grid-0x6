@@ -6,7 +6,8 @@ Recently, I came across some awesome-looking videos describing the procedural ge
 
 In general, the following steps will be performed to generate such a grid:
 
-1. Create a hexagonally aligned set of vertices. These vertices are created in layers. Layer 0 represents the middle point of the hexagon, while each further layer is another, bigger hexagon.      
+1. Create a hexagonally aligned set of vertices. These vertices are created in layers. A layer is a set of hexagonally aligned vertices. Each additional layer is more far away from the midpoint. Layer ze represents the midpoint of the hexagon, while each further layer is 
+   another, bigger hexagon. With each additional layer, the numer of vertices in the respective layer increases. As an example, layer one has six vertices, while layer two has twelve vertices. Excluding layer one, each layer has double the amount of vertices compared to the previous layer.     
    ![Set of hexagonally aligned vertices in a set of layers](/example/010_vertices.png "Set of hexagonally aligned vertices in a set of layers")  
 2. Build triangles with the previously created vertices.   
    ![Triangles connecting the previously created vertices](/example/010_triangles.png "Triangles connecting the previously created vertices")  
