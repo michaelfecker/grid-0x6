@@ -1,2 +1,2 @@
-# Procedural generation of a grid within a hexagonal shape.
+# Procedural generation of a rectangular grid with within a hexagonal shape.
 
