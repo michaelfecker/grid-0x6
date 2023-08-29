@@ -1,8 +1,10 @@
-# Procedural generation of a rectangular grid with within a hexagonal shape.
+# Procedural generation
 
 Recently, I came across some awesome-looking videos describing the procedural generation of various grids. Some of these used rectangles, triangles, or hexagons as a starting point. One of the videos I found most interesting was one showing the iterations of how the grid evolved with each iteration. Starting with an evenly structured grid, it became more and more naturally looking. 
 
-In general, the following steps have to be performed to generate such a grid:
+## Idea
+
+In general, the following steps will be performed to generate such a grid:
 
 1. Create a hexagonally aligned set of vertices. These vertices are created in layers. Layer 0 represents the middle point of the hexagon, while each further layer is another, bigger hexagon.      
    ![Set of hexagonally aligned vertices in a set of layers](/example/010_vertices.png "Set of hexagonally aligned vertices in a set of layers")  
