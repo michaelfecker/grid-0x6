@@ -4,7 +4,7 @@ Recently, I came across some awesome-looking videos describing the procedural ge
 
 In general, the following steps have to be performed to generate such a grid:
 
-1. Create a hexagonally aligned set of vertices,
+1. Create a hexagonally aligned set of vertices,   
    <img src="./example/010_vertices.png">
 3. Build triangles with the previously created vertices,
 4. Add new layers with more triangles.
