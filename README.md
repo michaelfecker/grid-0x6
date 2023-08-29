@@ -16,9 +16,9 @@ In general, the following steps will be performed to generate such a grid:
    ![Parallelograms merging two triangles](/example/010_parallelogram.png "Parallelograms merging two triangles") 
 5. With the implementation of the algorithm, some of the triangles may not find an adjacent triangle which is not merged into a parallelogram. These are highlighted on the following figure.     
     ![Unmerged triangles highlighted in orange color](/example/010_unmerged.png "Unmerged triangles highlighted in orange color") 
-6. Each paralellogram is split into four quadrangles. These quadrangles are also parallelograms on their own.  
+6. Each paralellogram is split into four quadrangles. These quadrangles are parallelograms, too.  
     ![Split parallelograms into 4 same-sized shapes](/example/010_patch-1.png "Split parallelograms into 4 same-sized shapes") 
 7. Each remaining triangle is split into three quadrangles. These quadrangles are kites.   
    ![Split unmerged triangles into 3 same-sized shapes](/example/010_patch-2.png "Split unmerged triangles into 3 same-sized shapes")
 8. Now, the magic happens (or in other words: this is where the algorithm really starts). The aim is to have a grid with similarly sized shapes, whereas the previous steps created shapes of two sizes: The shapes created from split parallelograms are bigger than the ones created from the split triangles. (to be precise: a shape created from a split parallelogram is 1.5 times as big as a shape created from a split triangle. A triangle is split into three shapes, while a parallelogram - which is two triangles - is split into four shapes).
-   The following iterations shall try to create similarly sized shapes. 
+   The following iterations shall try to create similarly sized shapes.  
