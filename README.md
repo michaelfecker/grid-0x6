@@ -18,4 +18,5 @@ In general, the following steps will be performed to generate such a grid:
     ![Unmerged triangles highlighted in orange color](/example/010_unmerged.png "Unmerged triangles highlighted in orange color") 
 7. Each paralellogram is split into four quadrangles. These quadrangles are also parallelograms on their own.  
     ![Split parallelograms into 4 same-sized shapes](/example/010_patch-1.png "Split parallelograms into 4 same-sized shapes") 
-8. Each remaining triangle is split into three rectangles.
+8. Each remaining triangle is split into three quadrangles.  
+   ![Split unmerged triangles into 3 same-sized shapes](/example/010_patch-2.png "Split unmerged triangles into 3 same-sized shapes") 
